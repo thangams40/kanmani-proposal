@@ -24,7 +24,6 @@ body{
 h1{font-size:3rem;}
 h2{font-weight:300;}
 
-.photo-img{
   width:240px;
   height:240px;
   border-radius:50%;
@@ -131,7 +130,21 @@ button{
   <h1>Happy Valentine’s Day ❤️</h1>
   <h2>Kanmani — my forever 💖</h2>
 
-  <img src="kanmani.jpg" class="photo-img" alt="Kanmani">
+  <img src="kanmani.jpg"
+     alt="Kanmani"
+     style="
+       width:240px;
+       height:240px;
+       border-radius:50%;
+       object-fit:cover;
+       border:6px solid white;
+       display:block;
+       margin:30px auto;
+       position:relative;
+       z-index:9999;
+       background:#fff;
+     ">
+
 
   <div class="card">
     <p>
