@@ -6,10 +6,10 @@
 <title>For Kanmani ❤️</title>
 
 <style>
-body{
+body {
   margin:0;
   font-family:'Segoe UI',sans-serif;
-  background:linear-gradient(135deg,#ff758c,#ff7eb3);
+  background: linear-gradient(135deg,#ff758c,#ff7eb3);
   color:white;
   text-align:center;
   overflow-x:hidden;
@@ -24,6 +24,15 @@ body{
 h1{font-size:3rem;}
 h2{font-weight:300;}
 
+.card{
+  background:rgba(255,255,255,0.2);
+  padding:35px;
+  border-radius:30px;
+  backdrop-filter:blur(8px);
+  margin-bottom:40px;
+}
+
+.photo-img{
   width:240px;
   height:240px;
   border-radius:50%;
@@ -31,13 +40,6 @@ h2{font-weight:300;}
   border:6px solid white;
   margin:30px auto;
   display:block;
-}
-
-.card{
-  background:rgba(255,255,255,0.2);
-  padding:35px;
-  border-radius:30px;
-  backdrop-filter:blur(8px);
 }
 
 .timeline{
@@ -130,26 +132,12 @@ button{
   <h1>Happy Valentine’s Day ❤️</h1>
   <h2>Kanmani — my forever 💖</h2>
 
-  <img src="kanmani.jpg"
-     alt="Kanmani"
-     style="
-       width:240px;
-       height:240px;
-       border-radius:50%;
-       object-fit:cover;
-       border:6px solid white;
-       display:block;
-       margin:30px auto;
-       position:relative;
-       z-index:9999;
-       background:#fff;
-     ">
-
+  <!-- PHOTO -->
+  <img src="kanmani.jpg" class="photo-img" alt="Kanmani">
 
   <div class="card">
     <p>
-      From the first time I saw you on <b>28 June 2023</b>,
-      something in my heart knew.<br><br>
+      From the first time I saw you on <b>28 June 2023</b>, something in my heart knew.<br><br>
       Our first date on <b>23 May 2025</b> made it real.<br><br>
       And now, every heartbeat chooses you — today, tomorrow, forever ❤️
     </p>
@@ -172,8 +160,9 @@ button{
   </div>
 </div>
 
+<!-- AUTOPLAY SONG (Enchanted Optional) -->
 <audio id="song">
-  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
 </audio>
 
 <script>
